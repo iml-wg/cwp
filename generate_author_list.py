@@ -22,7 +22,7 @@ if __name__ == '__main__':
     for author in authors:
         author['institution_index'] = institutions.index(
             author['institution']) + 1
-        latex_file_string += str(author['first_name']) + ', ' + str(author['last_name']) + \
+        latex_file_string += str(author['last_name']) + ', ' + str(author['first_name']) + \
             '$^{' + str(author['institution_index']) + '}$;\n'
 
     latex_file_string += '\\bigskip\n'
