@@ -23,8 +23,8 @@ if __name__ == '__main__':
     for author in authors:
         author['institution_index'] = institutions.index(
             author['institution']) + 1
-        latex_file_string += str(author['last_name']) + ', ' + str(author['first_name']) + \
-            '$^{' + str(author['institution_index']) + '}$;\n'
+        latex_file_string += str(author['first_name']) + ' ' + str(author['last_name']) + \
+            '$^{' + str(author['institution_index']) + '}$,\n'
     latex_file_string = latex_file_string[:-2] + '\n\\bigskip\n'
 
     for institution in institutions:
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     editors = [editors[0], editors[2], editors[1]]
     editors_string = '\\textbf{Editors}:'
     for editor in editors:
-        editors_string += ' ' + str(editor['last_name']) + ', ' + str(editor['first_name']) + \
-            '$^{' + str(editor['institution_index']) + '}$;'
+        editors_string += ' ' + str(editor['first_name']) + ' ' + str(editor['last_name']) + \
+            '$^{' + str(editor['institution_index']) + '}$,'
     editors_string = editors_string[:-1] + '\\\\\\'
     subprocess.call(['sed', '-i.bak', '/Editors/c\{}'.format(editors_string), 'HSF_ML_CWP.tex'])
