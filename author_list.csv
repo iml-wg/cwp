@@ -1,118 +1,118 @@
 first_name,last_name,institution
-Aaron,Sauers,Fermi National Accelerator Laboratory (US)
-Aashrita,Mangu,University of California Berkeley (US)
-Adam,Aurisano,University of Cincinnati (US)
-Adrian,Bevan,University of London (GB)
-Alessandra,Forti,University of Manchester (GB)
-Alexander,Kurepin,Russian Academy of Sciences (RU)
-Alexander,Radovic,College of William and Mary (US)
-Alexei,Klimentov,Brookhaven National Laboratory (US)
-Amir,Farbin,University of Texas at Arlington (US)
-Andrey,Ustyuzhanin,Yandex School of Data Analysis (RU)
-Antonio,Limosani,University of Melbourne (AU)
-Ariel,Schwartzman,SLAC National Accelerator Laboratory (US)
-Attilio,Picazio,University of Massachusetts (US)
-Aurelius,Rinkevicius,Cornell University (US)
-Ben,Hooberman,University of Illinois at Urbana-Champaign (US)
+Aaron,Sauers,Fermi National Accelerator Laboratory
+Aashrita,Mangu,University of California Berkeley
+Adam,Aurisano,University of Cincinnati
+Adrian,Bevan,University of London
+Alessandra,Forti,University of Manchester
+Alexander,Kurepin,Russian Academy of Sciences
+Alexander,Radovic,College of William and Mary
+Alexei,Klimentov,Brookhaven National Laboratory
+Amir,Farbin,University of Texas at Arlington
+Andrey,Ustyuzhanin,Yandex School of Data Analysis
+Antonio,Limosani,University of Melbourne
+Ariel,Schwartzman,SLAC National Accelerator Laboratory
+Attilio,Picazio,University of Massachusetts
+Aurelius,Rinkevicius,Cornell University
+Ben,Hooberman,University of Illinois at Urbana-Champaign
 Benedikt,Hegner,CERN
-Bob,Stienen,Radboud Universiteit Nijmegen (NL)
-Claire,David,Deutsches Elektronen-Synchrotron (DESY) (DE)
-Conor,Fitzpatrick,Ecole Polytechnique Federale de Lausanne (CH)
-Daniele,Bonacorsi,"Universita e INFN, Bologna (IT)"
-Dario,Menasce,"Universita \& INFN, Milano Bicocca (IT)"
-David,Rousseau,Universite de Paris Sud 11 (FR)
-Dick,Greenwood,Louisiana Tech University (US)
-Dorian,Kcira,California Institute of Technology (US)
-Douglas,Davis,Duke University (US)
-Dustin,Anderson,California Institute of Technology (US)
-Eduardo,Rodrigues,University of Cincinnati (US)
-Elias,Coniavitis,Universitaet Freiburg (DE)
+Bob,Stienen,Radboud Universiteit Nijmegen
+Claire,David,Deutsches Elektronen-Synchrotron
+Conor,Fitzpatrick,Ecole Polytechnique Federale de Lausanne
+Daniele,Bonacorsi,"Universita e INFN, Bologna"
+Dario,Menasce,"Universita \& INFN, Milano Bicocca"
+David,Rousseau,Universite de Paris Sud 11
+Dick,Greenwood,Louisiana Tech University
+Dorian,Kcira,California Institute of Technology
+Douglas,Davis,Duke University
+Dustin,Anderson,California Institute of Technology
+Eduardo,Rodrigues,University of Cincinnati
+Elias,Coniavitis,Universitaet Freiburg
 Federico,Carminati,CERN
-Fernanda,Psihas,Indiana University (US)
-Filip,Siroky,Masaryk University (CZ)
-Gabriel,Perdue,Fermi National Accelerator Laboratory (US)
+Fernanda,Psihas,Indiana University
+Filip,Siroky,Masaryk University
+Gabriel,Perdue,Fermi National Accelerator Laboratory
 Gaurav,Kaul,Intel
-Giles,Strong,LIP Lisboa (PT)
-Gilles,Louppe,New York University (US)
-Gordon,Watts,University of Washington (US)
-Graeme,Stewart,University of Glasgow (GB)
+Giles,Strong,LIP Lisboa
+Gilles,Louppe,New York University
+Gordon,Watts,University of Washington
+Graeme,Stewart,University of Glasgow
 Hans,Pabst,Intel
-Harvey,Newman,California Institute of Technology (US)
+Harvey,Newman,California Institute of Technology
 Helge,Meinhard,CERN
-Horst,Severini,University of Oklahoma (US)
+Horst,Severini,University of Oklahoma
 Ian,Stockdale,Altair Engineering
 Igor,Lakomov,CERN
-Ilija,Vukotic,University of Chicago (US)
-Jamal,Rorie,Rice University (US)
-Javier,Duarte,Fermi National Accelerator Laboratory (US)
-Jean-Roch,Vlimant,California Institute of Technology (US)
-Jim,Kowalkowski,Fermi National Accelerator Laboratory (US)
-Jim,Pivarski,Princeton University (US)
-Jochen,Gemmler,Karlsruher Institut f{\"u}r Technologie (DE)
-Johannes,Junggeburth,Max Planck Institut f{\"u}r Physik (DE)
+Ilija,Vukotic,University of Chicago
+Jamal,Rorie,Rice University
+Javier,Duarte,Fermi National Accelerator Laboratory
+Jean-Roch,Vlimant,California Institute of Technology
+Jim,Kowalkowski,Fermi National Accelerator Laboratory
+Jim,Pivarski,Princeton University
+Jochen,Gemmler,Karlsruher Institut f{\"u}r Technologie
+Johannes,Junggeburth,Max Planck Institut f{\"u}r Physik
 John,Harvey,CERN
-Jonas,Eschle,Universit{\"a}t Z{\"u}rich (CH)
+Jonas,Eschle,Universit{\"a}t Z{\"u}rich
 Jonas,Graw,NVidia
-Jordi,Garra-Tico,University of Cambridge (GB)
-Juan Pedro,Araque Espinosa,LIP Lisboa (PT)
-Karen,Tomko,Ohio Supercomputer Center (US)
-Kevin,Lannon,University of Notre Dame (US)
-Kim,Albertsson,Lulea University of Technology (SE)
-Konstantin,Kanishchev,"Universita e INFN, Padova (IT)"
-Konstantin,Skazytkin,Russian Academy of Sciences (RU)
-Kyle,Cranmer,New York University (US)
-Laurent,Basara,"Universita e INFN, Padova (IT)"
-Lindsey,Gray,Fermi National Accelerator Laboratory (US)
+Jordi,Garra-Tico,University of Cambridge
+Juan Pedro,Araque Espinosa,LIP Lisboa
+Karen,Tomko,Ohio Supercomputer Center
+Kevin,Lannon,University of Notre Dame
+Kim,Albertsson,Lulea University of Technology
+Konstantin,Kanishchev,"Universita e INFN, Padova"
+Konstantin,Skazytkin,Russian Academy of Sciences
+Kyle,Cranmer,New York University
+Laurent,Basara,"Universita e INFN, Padova"
+Lindsey,Gray,Fermi National Accelerator Laboratory
 Lorenzo,Moneta,CERN
 Louis,Capps,NVidia
-Lukas,Heinrich,New York University (US)
-Luke,Kreczko,University of Bristol (GB)
+Lukas,Heinrich,New York University
+Luke,Kreczko,University of Bristol
 Maria,Girone,CERN
-Mario,Campanelli,University of London (GB)
+Mario,Campanelli,University of London
 Mario,Lassnig,CERN
-Mark,Neubauer,University of Illinois at Urbana-Champaign (US)
-Martin,Erdmann,RWTH Aachen University (DE)
-Martin,Vala,Technical University of Kosice (Slovakia)
-Matthew,Feickert,Southern Methodist University (US)
-Mauro,Verzetti,University of Rochester (US)
-Meghan,Kane,"SoundCloud, formerly Massachusetts Institute of Technology (US)"
-Michael,Andrews,Carnegie-Mellon University (US)
-Michael,Kagan,SLAC National Accelerator Laboratory (US)
-Michael,Williams,Massachusetts Institute of Technology (US)
-Michela,Paganini,Yale University (US)
+Mark,Neubauer,University of Illinois at Urbana-Champaign
+Martin,Erdmann,RWTH Aachen University
+Martin,Vala,Technical University of Kosice
+Matthew,Feickert,Southern Methodist University
+Mauro,Verzetti,University of Rochester
+Meghan,Kane,SoundCloud
+Michael,Andrews,Carnegie-Mellon University
+Michael,Kagan,SLAC National Accelerator Laboratory
+Michael,Williams,Massachusetts Institute of Technology
+Michela,Paganini,Yale University
 Michele,Floris,CERN
-Mike,Sokoloff,University of Cincinnati (US)
-Narain,Meenakshi,Brown University (US)
-Nicolas,K{\"o}hler,Max Planck Institut f{\"u}r Physik (DE)
-Nuno,Filipe Castro,LIP Lisboa (PT)
-Omar,Zapata,OProject and University of Antioquia (CO)
-Paolo,Calafiura,Lawrence Berkeley National Laboratory (US)
-Paul,Glaysher,Deutsches Elektronen-Synchrotron (DESY) (DE)
+Mike,Sokoloff,University of Cincinnati
+Narain,Meenakshi,Brown University
+Nicolas,K{\"o}hler,Max Planck Institut f{\"u}r Physik
+Nuno,Filipe Castro,LIP Lisboa
+Omar,Zapata,OProject and University of Antioquia
+Paolo,Calafiura,Lawrence Berkeley National Laboratory
+Paul,Glaysher,Deutsches Elektronen-Synchrotron
 Paul,Seyfert,CERN
 Pere,Mato,CERN
 Piero,Altoe,NVidia
-Harrison,Prosper,Florida State University (US)
+Harrison,Prosper,Florida State University
 Przemysław,Karpiński,CERN
-Rob,Kutschke,Fermi National Accelerator Laboratory (US)
-Ryan,Reece,"University of California, Santa Cruz (US)"
-Savannah,Thais,Yale University (US)
-Sean-Jiun,Wang,University of Florida (US)
-Sergei,Gleyzer,University of Florida (US)
-Seth,Moortgat,Vrije Universiteit Brussel (BE)
-Sofia,Vallecorsa,Gangneung-Wonju National University (KR)
-Stefan,Wunsch,Karlsruher Institut f{\"u}r Technologie (DE)
+Rob,Kutschke,Fermi National Accelerator Laboratory
+Ryan,Reece,"University of California, Santa Cruz"
+Savannah,Thais,Yale University
+Sean-Jiun,Wang,University of Florida
+Sergei,Gleyzer,University of Florida
+Seth,Moortgat,Vrije Universiteit Brussel
+Sofia,Vallecorsa,Gangneung-Wonju National University
+Stefan,Wunsch,Karlsruher Institut f{\"u}r Technologie
 Stefano,Carrazza,CERN
-Steven,Schramm,Universit{\'e} de Gen{\`e}ve (CH)
-Emanuele,Usai,Brown University (US)
-Taylor,Childers,Argonne National Laboratory (US)
-Thomas,Keck,Karlsruher Institut f{\"u}r Technologie (DE)
-Tobias,Golling,Universit{\'e} de Gen{\`e}ve (CH)
-Thomas,Hacker,Purdue University (US)
-Uzziel,Perez,University of Alabama (US)
-Eli,Upfal,Brown University (US)
-Valentin,Kuznetsov,Cornell University (US)
-Vladimir,Gligorov,Centre National de la Recherche Scientifique (FR)
-Wahid,Bhimji,Lawrence Berkeley National Laboratory (US)
-Wenjing,Wu,Chinese Academy of Sciences (CN)
-Xavier,Vilasís-Cardona,University of Barcelona (ES)
-Zahari,Kassabov,University of Milan (IT)
+Steven,Schramm,Universit{\'e} de Gen{\`e}ve
+Emanuele,Usai,Brown University
+Taylor,Childers,Argonne National Laboratory
+Thomas,Keck,Karlsruher Institut f{\"u}r Technologie
+Tobias,Golling,Universit{\'e} de Gen{\`e}ve
+Thomas,Hacker,Purdue University
+Uzziel,Perez,University of Alabama
+Eli,Upfal,Brown University
+Valentin,Kuznetsov,Cornell University
+Vladimir,Gligorov,Centre National de la Recherche Scientifique
+Wahid,Bhimji,Lawrence Berkeley National Laboratory
+Wenjing,Wu,Chinese Academy of Sciences
+Xavier,Vilasís-Cardona,University of Barcelona
+Zahari,Kassabov,University of Milan
