@@ -70,7 +70,7 @@ HEP has started to exploring interactive frameworks, such as the Service for Web
 \subsection{Internal and external ML tools}
 %Contributors: Juan Pedro Araque, Nuno Filipe Castro, Thomas Keck, Stefan Wunsch, Igor Lakomov, Konstantin Skazytkin, Luke Kreczko, Przemysław Karpiński, Claire David, Hans Pabst, Attilio Picazio, Giles Strong, Gordon Watts, Lorenzo Moneta, Matthew Feickert, Mark Neubauer, Daniele Bonacorsi, Mauro Verzetti, Seth Moortgat, Sergei Gleyzer, Fernanda Psihas, Elias Coniavitis, Gilles Louppe, Kim Albertsson, Steven Schramm, Martin Erdmann
 
-% In section~\ref{sec:data_formats} we provide a high-level overview of existing HEP and ML data formats. Section~\ref{sec:ml_tools} investigates the present ML software landscape in HEP, while section~\ref{sec:tool_roadmap} proposes a road-map towards a sustainable future HEP machine learning software landscape.
+% In Section~\ref{sec:data_formats} we provide a high-level overview of existing HEP and ML data formats. Section~\ref{sec:ml_tools} investigates the present ML software landscape in HEP, while Section~\ref{sec:tool_roadmap} proposes a road-map towards a sustainable future HEP machine learning software landscape.
 
 Internally developed ML software, such as the Toolkit for Multivariate Analysis (TMVA,~\cite{TMVA}), have been developed to apply a variety of machine learning algorithms to HEP challenges. Currently, most published HEP analyses with machine learning have made use of TMVA. There is also software developed in HEP, such as NeuroBayes~\cite{neurobayes,neurobayes2} and RuleFit, that have gained popularity outside of HEP.
 
@@ -132,12 +132,12 @@ HEP and ML communities currently make use of different data formats. HEP heavily
 
 A desirable data format should have the following attributes: high read-write speed for efficient training, sparse readability without loading entire dataset into RAM, compression and common use by the machine learning community.
 
-HEP machine learning applications require high performance and flexible algorithms to address the variety of use cases. Some applications, such as triggering, also have to work under tight latency constraints of the order of a few microseconds and below. The data sets are extremely large, which comes with I/O challenges described in section~\ref{sec:software_IO}. This is expected to become even more challenging, as the LHC continues to ramp-up and deliver increasingly large amounts of data.
+HEP machine learning applications require high performance and flexible algorithms to address the variety of use cases. Some applications, such as triggering, also have to work under tight latency constraints of the order of a few microseconds and below. The data sets are extremely large, which comes with I/O challenges described in Section~\ref{sec:software_IO}. This is expected to become even more challenging, as the LHC continues to ramp-up and deliver increasingly large amounts of data.
 
 %All of these constitute requirements on ML tools used by the HEP community.
 
 %There are further requirements. The HEP community, for example, is looking to elevate Python to a first class library.
-As discussed in section ~\ref{sec:software_proglang}, Machine Learning tools use a number of languages. To use them it will be important to offer adequate support. C++ converters or similar tools are also needed to make sure the training result can be efficiently evaluated.
+As discussed in Section~\ref{sec:software_proglang}, Machine Learning tools use a number of languages. To use them it will be important to offer adequate support. C++ converters or similar tools are also needed to make sure the training result can be efficiently evaluated.
 
 Advantages of using the {\bf external tools} are the size of the community that uses and supports them, being able to easily keep up with progress in the industry and profit from the forefront of the ML research.
 
