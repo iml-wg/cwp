@@ -60,9 +60,10 @@ final:
 	make text
 	make clean
 
-arXiv: realclean authors
+arXiv: realclean document
 	mkdir submit_to_arXiv
 	cp *.tex submit_to_arXiv
+	cp *.bbl submit_to_arXiv/ms.bbl
 	cp Makefile submit_to_arXiv
 	cp -r src bib images submit_to_arXiv
 	mv submit_to_arXiv/HSF_ML_CWP.tex submit_to_arXiv/ms.tex
