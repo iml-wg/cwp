@@ -78,10 +78,10 @@ HEP and ML communities currently make use of different data formats. HEP heavily
 % the use of the following data formats: flat tables, sparce matrices, row and column-wise arrays and static data structures, in various machine learning toolkits
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=0.7\linewidth]{images/table-of-formats.pdf}
+ \includegraphics{images/table-of-formats.pdf}
  \caption{Existing data-formats used by ML communities.}\label{fig:data-formats}
 \end{figure}
-\vspace{-5pt}
+
 \begin{table}[htbp]
  \caption{This table lists various data formats (rows) and ML tools (columns). The \checkmark\ indicates that there is a native solution, while $\times$ means that the conversion from one data-format to another is straightforward. The following notation has been used to denote the data-formats: \textbf{T} Trees, \textbf{F} flat tables, \textbf{M} sparse matrices, \textbf{R} row-wise arrays, \textbf{C} column-wise arrays \textbf{S} static data structures\newline}
  %
@@ -109,7 +109,6 @@ HEP and ML communities currently make use of different data formats. HEP heavily
  \end{tabular}\label{tab:formats_vs_tools}
 \end{table}
 %The de-facto HEP data format is ROOT, used by current HEP experiments and software systems. Although it is very well suited to store and process physics events, it is seldom  used outside of HEP.
-\clearpage
 \subsubsection{Desirable HEP-ML Software and Data Format Attributes}
 
 A desirable data format should have the following attributes: high read-write speed for efficient training, sparse readability without loading the entire dataset into RAM, compression, and common use by the machine learning community.\\
@@ -135,7 +134,9 @@ At the same time, interfaces have been built between TMVA and external machine l
 A more general approach to file format conversion is to build middleware solutions that export HEP-specific formats like ROOT to formats used by external machine learning tools.
 %\textit{Caution: this middleware doesn’t imply that it hides completely the other layers. Here one needs knowledge on both inputs and outputs to make a bridge between the HEP tools and external tools.}
 %As part of the effort to increase collaboration and bring the HEP community closer to the machine learning community, we foresee that providing a suitable middle-ware solutions to convert ROOT based data to various data-formats is a crucial component to collaboration.
-Existing middleware solutions are shown in Table~\ref{table:Middleware}.
+Existing middleware solutions are shown in Table~\ref{table:Middleware}.\\
+
+Approaches to bridge the different languages and data formats inside and outside of HEP include providing interfaces or building middleware solutions that translate HEP-specific data formats to external ML tools. It is a topic of current research to determine the most efficient solution.
 
 \begin{table}[htbp]
  \caption{Middleware solutions translating the ROOT data format to other formats.}
@@ -168,12 +169,9 @@ Existing middleware solutions are shown in Table~\ref{table:Middleware}.
  \end{center}
  \label{table:Middleware}
 \end{table}
-\clearpage
 
 %\subsubsection
 %The fast paced improvements of external tools and the large number of researchers and practitioners working on them means that it will be almost impossible for the HEP community to keep up with the improvements. As a result, external machine learning tools will be used by HEP physicists to maximize their physics output.
-
-Approaches to bridge the different languages and data formats inside and outside of HEP include providing interfaces or building middleware solutions that translate HEP-specific data formats to external ML tools. It is a topic of current research to determine the most efficient solution.
 
 
 %\paragraph{Conclusion}
