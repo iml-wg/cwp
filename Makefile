@@ -11,7 +11,7 @@ figure_list = $(figure_src:.tex=.pdf)
 LATEX = lualatex
 
 BIBTEX = bibtex
-#BIBTEX = biber
+# BIBTEX = biber
 
 default: document copy_draft
 
