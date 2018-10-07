@@ -34,6 +34,9 @@ text:
 
 document: authors clear_screen figures text
 
+spellcheck:
+	make -C src interactive-spellcheck
+
 copy_draft:
 	rsync $(FILENAME).pdf $(output_file)
 
