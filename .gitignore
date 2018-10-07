@@ -240,3 +240,8 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# special files for this repository
+src/authors.tex
+draft_2018-10-07.pdf
+HSF_ML_CWP.pdf
