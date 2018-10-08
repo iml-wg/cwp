@@ -66,7 +66,7 @@ HEP has started to exploring interactive frameworks, such as the Service for Web
 Internally developed ML software, such as the Toolkit for Multivariate Analysis (TMVA,~\cite{TMVA}), has been developed to apply a variety of machine learning algorithms to HEP challenges. Currently, many published HEP analyses with machine learning have made use of TMVA. There is also software developed in HEP, such as NeuroBayes~\cite{neurobayes,neurobayes2} and RuleFit, that have gained popularity outside of HEP.
 
 At the same time, the ML landscape has evolved and many different ML tools have emerged and gained popularity. There are a growing number of published results based on externally developed tools. The latter, often developed directly by industry for specific applications, are constantly undergoing development, incorporating the latest algorithms from academia. Currently, both internal and external tools are used by the HEP community. TMVA has also undergone significant development in recent years.
-In addition, there are smaller tools developed in the HEP community, extending either internal or external ML tools for specific use cases and applications within HEP experiments, such as \texttt{hep\_ml}~\cite{hep_ml} for training ML classifiers, or \texttt{tmva-branch-adder}~\cite{tmva-branch-adder} and \texttt{lwtnn}~\cite{lwtnn} to facilitate classifier inference tasks.
+In addition, there are smaller tools developed in the HEP community, extending either internal or external ML tools for specific use cases and applications within HEP experiments, such as \texttt{hep\_ml}~\cite{hep_ml} for training ML classifiers in HEP specific tasks, or \texttt{tmva-branch-adder}~\cite{tmva-branch-adder} and \texttt{lwtnn}~\cite{lwtnn} to facilitate classifier inference tasks.
 
 This begs the question: what aspects of ML development and use should the HEP community focus on in the next 5-10 years? There are several aspects to consider including data formats, community size, and interfaces.
 %and middleware solutions aid in the conversion as needed.
@@ -82,7 +82,7 @@ HEP and ML communities currently make use of different data formats. HEP heavily
 \end{figure}
 
 \begin{table}[htbp]
- \caption{This table lists various data formats (rows) and ML tools (columns). The \checkmark\ indicates that there is a native solution, while $\times$ means that the conversion from one data-format to another is straightforward. The following notation has been used to denote the data-formats: \textbf{T} Trees, \textbf{F} flat tables, \textbf{M} sparse matrices, \textbf{R} row-wise arrays, \textbf{C} column-wise arrays \textbf{S} static data structures\newline}
+  \caption{This table lists various data formats (rows) and ML tools (columns). The \checkmark\ indicates that there is a native solution, while $\times$ means that the conversion from one data-format to another is straightforward (the conversion mechanisms from Table~\ref{table:Middleware} are omitted here). The following notation has been used to denote the data-formats: \textbf{T} Trees, \textbf{F} flat tables, \textbf{M} sparse matrices, \textbf{R} row-wise arrays, \textbf{C} column-wise arrays \textbf{S} static data structures\newline}
  %
  % Please don't comment in text, use hypothesis instead
  %\textcolor{red}{don't root\_numpy and root\_pandas provide straightforward conversion from root to numpy/hdf5 and thereby input formats to tensorflow, theano, scikit learn, sparkml, torch (which would fill the first row with $\times$)?}
@@ -90,20 +90,21 @@ HEP and ML communities currently make use of different data formats. HEP heavily
  %\centering
  \begin{tabular}{lcccccccccc}
   \hline
-                          & TMVA       & TensorFlow & Theano     & Scikit     & R          & Spark      & VW         & libFM      & RGF        & Torch      \\
-                          &            &            &            & Learn      &            & ML         &            &            &            &            \\
+                          & TMVA              & TensorFlow & Theano     & Scikit     & R          & Spark      & VW         & libFM      & RGF        & Torch      \\
+                          &                   &            &            & Learn      &            & ML         &            &            &            &            \\
   \hline
   \hline
-  ROOT [\textbf{T, C}]    & \checkmark &            &            &            &            &            &            &            &            &            \\
-  CSV [\textbf{F}]        &            & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & \checkmark \\
-  libSVM [\textbf{M}]     &            &            &            &            &            &            & $\times$   & \checkmark & $\times$   &            \\
-  VW [\textbf{M}]         &            &            &            &            &            &            & \checkmark &            &            &            \\
-  RGF [\textbf{M}]        &            &            &            &            &            &            &            &            & \checkmark &            \\
-  NumPy [\textbf{R}]      &            & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & \checkmark \\
-  Avro [\textbf{S, R}]    &            &            &            &            & \checkmark & \checkmark &            &            &            &            \\
-  Parquet [\textbf{S, C}] &            &            &            &            & \checkmark & \checkmark &            &            &            &            \\
-  HDF5 [\textbf{S}]       &            & $\times$   & $\times$   & $\times$   &            &            &            &            &            & \checkmark \\
-  R df [\textbf{R}]       &            &            &            &            & \checkmark &            &            &            &            &            \\
+  ROOT [\textbf{T, C}]    & \checkmark        & \multicolumn{9}{|c|}{through conversion into other formats, see Table~\ref{table:Middleware}}                      \\
+   \cline{3-11}
+  CSV [\textbf{F}]        &                   & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & \checkmark \\
+  libSVM [\textbf{M}]     &                   &            &            &            &            &            & $\times$   & \checkmark & $\times$   &            \\
+  VW [\textbf{M}]         &                   &            &            &            &            &            & \checkmark &            &            &            \\
+  RGF [\textbf{M}]        &                   &            &            &            &            &            &            &            & \checkmark &            \\
+  NumPy [\textbf{R}]      & \cite{root_numpy} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & $\times$   & $\times$   & $\times$   & \checkmark \\
+  Avro [\textbf{S, R}]    &                   &            &            &            & \checkmark & \checkmark &            &            &            &            \\
+  Parquet [\textbf{S, C}] &                   &            &            &            & \checkmark & \checkmark &            &            &            &            \\
+  HDF5 [\textbf{S}]       &                   & $\times$   & $\times$   & $\times$   &            &            &            &            &            & \checkmark \\
+  R df [\textbf{R}]       &                   &            &            &            & \checkmark &            &            &            &            &            \\
   \hline
  \end{tabular}\label{tab:formats_vs_tools}
 \end{table}
