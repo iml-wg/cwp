@@ -1,18 +1,22 @@
-personal_ws-1.1 en 41 
+personal_ws-1.1 en 49 
 partons
 OpenCL
+parametrized
 calorimeter
 Hadron
 convolutional
 partonic
 Jupyter
+PDFs
 dataset
 vertexing
 CMS
+GEANT
 boson
 OpenLab
 DNNs
 reproducibility
+systematics
 NeuroBayes
 BDTs
 Kaggle
@@ -20,14 +24,17 @@ NNs
 NN
 Higgs
 QCD
+parallelization
 LHC
 DNN
 calorimeters
 dimensionality
+Eq
 roadmap
 combinatorics
 hadrons
 parton
+NNPDF
 muon
 datasets
 HL
@@ -40,3 +47,4 @@ GPUs
 LHCb
 LSTM
 TMVA
+parametrizations
