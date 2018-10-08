@@ -75,13 +75,13 @@ This begs the question: what aspects of ML development and use should the HEP co
 
 HEP and ML communities currently make use of different data formats. HEP heavily relies on the ROOT software framework for data storage, data processing, and data analysis. The machine learning community uses a large variety of formats, as shown in Figure~\ref{fig:data-formats}. This figure also shows the relationship of machine learning data formats with ROOT: the ROOT file format is very flexible, though it requires a significant investment to properly use. Table~\ref{tab:formats_vs_tools} summarizes the current machine learning toolkits and file formats they support.
 % the use of the following data formats: flat tables, sparce matrices, row and column-wise arrays and static data structures, in various machine learning toolkits
-\begin{figure}[htbp]
+\begin{figure}
  \centering
  \includegraphics{images/table-of-formats.pdf}
  \caption{Existing data-formats used by ML communities.}\label{fig:data-formats}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}
   \caption{This table lists various data formats (rows) and ML tools (columns). The \checkmark\ indicates that there is a native solution, while $\times$ means that the conversion from one data-format to another is straightforward (the conversion mechanisms from Table~\ref{table:Middleware} are omitted here). The following notation has been used to denote the data-formats: \textbf{T} Trees, \textbf{F} flat tables, \textbf{M} sparse matrices, \textbf{R} row-wise arrays, \textbf{C} column-wise arrays \textbf{S} static data structures\newline}
  %
  % Please don't comment in text, use hypothesis instead
@@ -138,7 +138,7 @@ Existing middleware solutions are shown in Table~\ref{table:Middleware}.
 
 Approaches to bridge the different languages and data formats inside and outside of HEP include providing interfaces or building middleware solutions that translate HEP-specific data formats to external ML tools. It is a topic of current research to determine the most efficient solution.
 
-\begin{table}[htbp]
+\begin{table}
  \caption{Middleware solutions translating the ROOT data format to other formats.}
  \begin{center}
   \begin{tabular}{|l|l|}
