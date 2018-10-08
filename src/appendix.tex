@@ -1,112 +1,23 @@
-\begin{comment}
-\section{Machine Learning Workflows}
+\subsection{Matrix Element Methods}
+\label{subsec:MEM}
 
-The HEP computing model relies on high throughput computing (HTC). This means we operate on data under the assumption of independence between events, and divide our data across a very large number of homogeneous compute nodes that all operate in isolation. Results are drawn together as a sum in the end. This computing model is not natural for training machine learning algorithms where, in the simplest model, one training node must iterate over the entire dataset to fully leverage the statistical power it contains.
+The ME method is based on \emph{ab initio} calculations of the probability density function $\mathcal{P}$ of an event with observed final-state particle momenta ${\bf x}$ to be due to a physics process $\xi$ with theory parameters $\boldsymbol\alpha$.
+One can compute $\mathcal{P}_{\xi}({\bf x}|{\boldsymbol\alpha})$ by means of the factorization theorem from the corresponding partonic cross-sections of the hard-scattering process involving parton momenta ${\bf y}$ and is given by
+\begin{equation}
+ \mathcal{P}_{\xi}({\bf x}|{\boldsymbol\alpha}) = \frac{1}{\sigma^{\rm fiducial}_{\xi}(\boldsymbol\alpha)} \int d\Phi ({\bf y}_{\rm final}) \; dx_1 \; dx_2~\frac{f(x_1)f(x_2)}{2s x_1 x_2} \; |\mathcal{M}_{\xi}({\bf y}|\boldsymbol\alpha)|^2 \; \delta^{4}({\bf y}_{\rm initial}-{\bf y}_{\rm final}) \; W({\bf x}, {\bf y})
+ \label{eqn:MEProb}
+\end{equation}
+where and $x_i$ and ${\bf y}_{{\rm initial}}$ are related by $y_{{\rm initial},i}\equiv \frac{\sqrt{s}}{2}(x_i,0,0,\pm x_i)$, $f(x_i)$ are the parton distribution functions, $\sqrt{s}$ is the collider center-of-mass energy, $\sigma^{\textrm{ fiducial}}_{\xi}(\boldsymbol\alpha)$ is the total cross section for the process $\xi$ (with $\boldsymbol\alpha$) times the detector acceptance, $d\Phi({\bf y})$ is the phase space density factor, $\mathcal{M}_{\xi}({\bf y}|\boldsymbol\alpha)$ is the matrix element (typically at leading-order (LO)), and $W({\bf x}, {\bf y})$ is the probability density (aka ``transfer function'') that a selected event ${\bf y}$ ends up as a measured event ${\bf x}$.
+One can use calculations of Eq.~\ref{eqn:MEProb} in a number of ways (e.g. likelihood functions) to search for new phenomena at particle colliders.
 
-The next sections outline several important workflows - how individuals and groups accomplish machine learning tasks today. The purpose is to list all the steps and discuss needs for each of them and their possible future evolution.
 
-\paragraph{Classical Training WorkFlow}
-\begin{enumerate}
- \item Conversion/Extraction Tools
-       \begin{enumerate}
-        \item Conversion to ML format
-        \item Framework to ML format
-        \item Read Root to in memory ML format
-       \end{enumerate}
- \item Pipelining Disk to Memory
-       \begin{enumerate}
-        \item Parallel io / processing in batches
-              \begin{enumerate}
-               \item Processing on device
-              \end{enumerate}
-       \end{enumerate}
- \item Machine (Deep) Learning Framework
-       \begin{enumerate}
-        \item Use broader community and contribute back
-        \item Areas
-              \begin{enumerate}
-               \item Model definition
-               \item Training (e.g. parallel)
-               \item Model output format
-               \item Plotting tools
-               \item Analysis tools (e.g. ROC curves)
-               \item Notebooks
-              \end{enumerate}
-       \end{enumerate}
- \item Hyperparameter scan/optimization “framework”
-       \begin{enumerate}
-        \item Workflow
-        \item Metadata
-       \end{enumerate}
- \item Integration with experiment Workflow and Data Management System
-       \begin{enumerate}
-        \item Parallelization
-        \item HyperParameter
-        \item Model Parallel
-        \item Data Parallel
-       \end{enumerate}
- \item Output to Experiment
-\end{enumerate}
 
-\paragraph{Production Training Workflow}
-\begin{enumerate}
- \item Distributed within one site/HPC
- \item Automation
- \item Monitoring validation
-\end{enumerate}
+%%%
 
-\paragraph{Production Usage of Training}
-\begin{enumerate}
- \item Workflow like calibration-
- \item Conditions Like Database for NN storage
- \item Network Inference Service (potentially over network) (e.g. TensorFlow Server)
-       \begin{enumerate}
-        \item Memory management
-       \end{enumerate}
-\end{enumerate}
 
-\paragraph{User Analysis Workflow}
-\begin{enumerate}
- \item Leveraging Production Tools?
- \item Lightweight Tools
- \item Exporting of Models/Weights from production
- \item Model Sharing
-\end{enumerate}
+As stated in Sect.~\ref{sec:applications-MEM}, the ME method has three notable features: it (1) does not require training data being an \emph{ab initio} calculation of event probabilities, (2) incorporates all available kinematic information of a hypothesized process, including all correlations, and (3) has a clear physical meaning in terms of the transition probabilities within the framework of quantum field theory.
 
-\paragraph{Software}
-\begin{enumerate}
- \item Models Management
-       \begin{enumerate}
-        \item Providence  {\em PC Provenance?}
-        \item Common representation of architecture and weights
-       \end{enumerate}
- \item Experiment SW Framework
-       \begin{enumerate}
-        \item Model inference
-        \item In framework training (e.g. for anomaly detection or rolling calibration)
-              \begin{enumerate}
-               \item Iteration (same events for each epoch)
-              \end{enumerate}
-        \item Condition like Model storage/booking service
-        \item Monitoring/validation tools
-        \item Better code framework automatic templating and/or FW autocompletion.
-        \item Better debugging tools: automatic parsing of logs, dynamic community driven FAQ (like StackExchange), etc.
-       \end{enumerate}
- \item Requirements to Workflow Management system
-       \begin{enumerate}
-        \item Allocation of multi-node / hybrid resources
-       \end{enumerate}
- \item Requirements to Facilities (link to Resources)
-       \begin{enumerate}
-        \item Specialized [mini]-HPC aimed at specified tasks (e.g. ML training)
-        \item High bandwidth between accelerators
-        \item High throughput IO
-        \item Support for different data access patterns
-              \begin{enumerate}
-               \item Hyperparameter scan / Model parallel- same data on lots of nodes
-               \item Data parallel- different data on all
-              \end{enumerate}
-       \end{enumerate}
-\end{enumerate}
-
-\end{comment}
+In reference to point (1), the matrix element $\mathcal{M}_{\xi}({\bf y}|\boldsymbol\alpha)$ in the method involves all partons in the $n\rightarrow m$ process, so when the 4-momentum of particles are not completely measured experimentally (e.g. neutrinos), one must integrate over the missing information which increases the dimensionality of the integration.
+In reference to point (2), a clever technique to re-map the phase space in order to reduce the sharpness of integrate in that space in an automated way ({\sf MADWEIGHT}~\cite{Artoisenet:2010cn}) is often used in conjunction with a matrix element calculation package ({\sf MADGRAPH\_aMC\@NLO}~\cite{Alwall:2014hca}).
+In practice, evaluation of definite integrals by the ME approach invokes techniques such as importance sampling (see {\sf VEGAS}~\cite{PETERLEPAGE1978192,Ohl:1998jn} and {\sf FOAM}~\cite{JADACH200355}) or recursive stratified sampling (see MISER~\cite{Press:1989vk}) Monte Carlo integration.
+Acceleration of some of these techniques on modern computing architectures has been achieved, for example concurrent phase space sampling in VEGAS on GPUs.
