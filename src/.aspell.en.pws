@@ -1,9 +1,11 @@
-personal_ws-1.1 en 38 
+personal_ws-1.1 en 41 
 partons
+OpenCL
 calorimeter
 Hadron
 convolutional
 partonic
+Jupyter
 dataset
 vertexing
 CMS
@@ -11,6 +13,7 @@ boson
 OpenLab
 DNNs
 reproducibility
+NeuroBayes
 BDTs
 Kaggle
 NNs
@@ -36,3 +39,4 @@ CERN
 GPUs
 LHCb
 LSTM
+TMVA

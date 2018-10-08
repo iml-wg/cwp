@@ -1,5 +1,5 @@
 %.interactive-spellcheck: %.tex
-	aspell -t -d en -p ./.aspell.en.pws -c $<
+	aspell -t -d en_US -p ./.aspell.en.pws -c $<
 
 %.batch-spellcheck: %.tex
 	./spellcheck.sh $<
