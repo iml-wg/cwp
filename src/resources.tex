@@ -30,6 +30,11 @@ If different ML techniques can achieve equivalent physics performance but requir
 
 GPUs have been extremely useful in speeding up the training of complex deep learning models. Many researchers in HEP are currently relying on private or university GPU clusters to perform machine learning training. Unfortunately, there is no centralized GPU resource available for general HEP usage. Availability of greater and more modern GPU resources would significantly reduce the training time and assist many on-going $R\&D$ efforts in the community.
 
+\subsection{Tensor Processing Units}\label{subsec:TPU}
+
+TPUs are optimized for training deep learning models and offer a higher input-output capability compared to GPUs. They are available on the Google Cloud ~\cite{cloudgoogle}.  Current efforts in the HEP community are studying the use of TPUs for possible speed up of the training stage.  
+
+
 \subsection{High Performance Computing}
 
 Resource-rich many-core processors such as MIC, GPUs, and TPUs are vital to the optimization of the training time of most modern machine learning algorithms, including deep neural networks, generative adversarial networks, autoencoders, etc. Availability of High Performance Computing (HPC) resources equipped with many-core processors and high-performance network storage are essential to distributed running of large-scale machine learning algorithms. Current efforts to bring and expand the availability of HPC resources in high-energy physics computing will be vital to the successful progress of the application of machine learning techniques to current and future experiments.
@@ -75,6 +80,7 @@ To efficiently use the resources described in previous subsections, machine lear
 
 \subsection{Machine Learning As a Service}
 Current cloud providers rely on the machine learning as a service model, allowing for the efficient use of common resources, and make use of interactive machine learning tools. Machine learning as a service is not yet widely used in HEP, but examples of successful publications which used machine learning as a service exist, e.g.~\cite{Aaij:2014azz}. Specialized HEP services for interactive analysis, such as CERN's Service for Web-based Analysis (SWAN) may play an important role in adoption of machine learning tools in HEP workflows. In order to use these tools more efficiently, sufficient and appropriately tailored hardware resources  described in this chapter are needed.
+In addition, the evolution of current HEP reconstruction software model to support off-loading ML tasks to heterogeneous computing resources, as well as ML task pooling, should be studied.
 
 
 

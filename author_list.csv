@@ -2,6 +2,7 @@ first_name,last_name,institution
 Aaron,Sauers,Fermi National Accelerator Laboratory
 Aashrita,Mangu,University of California Berkeley
 Adam,Aurisano,University of Cincinnati
+Andrea,De Simone, SISSA Trieste Italy
 Adrian,Bevan,University of London
 Alessandra,Forti,University of Manchester
 Alexander,Kurepin,Russian Academy of Sciences
@@ -55,6 +56,7 @@ Jonas,Eschle,Universit{\"a}t Z{\"u}rich
 Jonas,Graw,NVidia
 Jordi,Garra-Tico,University of Cambridge
 Juan Pedro,Araque Espinosa,LIP Lisboa
+Justin,Vasel, Indiana University
 Karen,Tomko,Ohio Supercomputer Center
 Kevin,Lannon,University of Notre Dame
 Kim,Albertsson,Lulea University of Technology
@@ -103,6 +105,7 @@ Sofia,Vallecorsa,Gangneung-Wonju National University
 Stefan,Wunsch,Karlsruher Institut f{\"u}r Technologie
 Stefano,Carrazza,CERN
 Steven,Schramm,Universit{\'e} de Gen{\`e}ve
+Sydney,Otten, University of Amsterdam and Radboud University Nijmegen
 Emanuele,Usai,Brown University
 Taylor,Childers,Argonne National Laboratory
 Thomas,Keck,Karlsruher Institut f{\"u}r Technologie
@@ -111,9 +114,10 @@ Thomas,Hacker,Purdue University
 Uzziel,Perez,University of Alabama
 Eli,Upfal,Brown University
 Valentin,Kuznetsov,Cornell University
-Vladimir,Gligorov,Centre National de la Recherche Scientifique
+Vladimir,V. Gligorov,Centre National de la Recherche Scientifique
 Wahid,Bhimji,Lawrence Berkeley National Laboratory
 Wenjing,Wu,Chinese Academy of Sciences
 Xavier,Vilasís-Cardona,University of Barcelona
+Yann,Coadou, CPPM Aix Marseille Univ CNRS/IN2P3
 Zahari,Kassabov,University of Milan
 Manfred,Paulini,Carnegie Mellon University
