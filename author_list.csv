@@ -2,7 +2,7 @@ first_name,last_name,institution
 Aaron,Sauers,Fermi National Accelerator Laboratory
 Aashrita,Mangu,University of California Berkeley
 Adam,Aurisano,University of Cincinnati
-Andrea,De Simone, SISSA Trieste Italy
+Andrea,De Simone,SISSA Trieste Italy
 Adrian,Bevan,University of London
 Alessandra,Forti,University of Manchester
 Alexander,Kurepin,Russian Academy of Sciences
@@ -16,7 +16,7 @@ Attilio,Picazio,University of Massachusetts
 Aurelius,Rinkevicius,Cornell University
 Ben,Hooberman,University of Illinois at Urbana-Champaign
 Benedikt,Hegner,CERN
-Bjorn, Burkle, Brown University
+Bjorn,Burkle,Brown University
 Bob,Stienen,Radboud Universiteit Nijmegen
 Claire,David,Deutsches Elektronen-Synchrotron
 Conor,Fitzpatrick,Ecole Polytechnique Federale de Lausanne
@@ -52,19 +52,19 @@ Jim,Kowalkowski,Fermi National Accelerator Laboratory
 Jim,Pivarski,Princeton University
 Jochen,Gemmler,Karlsruher Institut f{\"u}r Technologie
 Johannes,Junggeburth,Max Planck Institut f{\"u}r Physik
-John, Anderson, Google
+John,Anderson,Google
 John,Harvey,CERN
 Jonas,Eschle,Universit{\"a}t Z{\"u}rich
 Jonas,Graw,NVidia
 Jordi,Garra-Tico,University of Cambridge
 Juan Pedro,Araque Espinosa,LIP Lisboa
-Justin,Vasel, Indiana University
+Justin,Vasel,Indiana University
 Karen,Tomko,Ohio Supercomputer Center
 Kevin,Lannon,University of Notre Dame
 Kim,Albertsson,Lulea University of Technology
 Konstantin,Kanishchev,"Universita e INFN, Padova"
 Konstantin,Skazytkin,Russian Academy of Sciences
-Kun, Yang, Google
+Kun,Yang,Google
 Kyle,Cranmer,New York University
 Laurent,Basara,"Universita e INFN, Padova"
 Lindsey,Gray,Fermi National Accelerator Laboratory
@@ -114,16 +114,16 @@ Taylor,Childers,Argonne National Laboratory
 Thomas,Keck,Karlsruher Institut f{\"u}r Technologie
 Tobias,Golling,Universit{\'e} de Gen{\`e}ve
 Thomas,Hacker,Purdue University
-Ulrich, Heintz, Brown University
+Ulrich,Heintz,Brown University
 Uzziel,Perez,University of Alabama
 Eli,Upfal,Brown University
 Valentin,Kuznetsov,Cornell University
 Vladimir Vava,Gligorov,"LPNHE, Sorbonne Universit\'{e} et Universit\'{e} Paris Diderot, CNRS/IN2P3, Paris"
 Wahid,Bhimji,Lawrence Berkeley National Laboratory
-Wei, Sun, Google
+Wei,Sun,Google
 Wenjing,Wu,Chinese Academy of Sciences
 Xavier,Vilasís-Cardona,University of Barcelona
-Yann,Coadou, CPPM Aix Marseille Univ CNRS/IN2P3
-Yi-Fan, Chen, Google
+Yann,Coadou,CPPM Aix Marseille Univ CNRS/IN2P3
+Yi-Fan,Chen,Google
 Zahari,Kassabov,University of Milan
 Manfred,Paulini,Carnegie Mellon University

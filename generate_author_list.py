@@ -5,7 +5,7 @@ if __name__ == '__main__':
     authors = []
 
     with open('author_list.csv') as csvfile:
-        reader = csv.DictReader(csvfile)
+        reader = csv.DictReader(csvfile, skipinitialspace=True)
         authors = [{'first_name': row['first_name'],
                     'last_name': row['last_name'],
                     'institution': row['institution']} for row in reader]
