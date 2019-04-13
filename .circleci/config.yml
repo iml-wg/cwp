@@ -9,6 +9,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install Python 2
+          command: sudo apt-get update -qq && sudo apt-get install -y -qq python-pip
+      - run:
           name: Print current datetime
           command: date -u '+%Y-%m-%d %H:%M:%S'
       - run:
